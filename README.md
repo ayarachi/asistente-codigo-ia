@@ -18,6 +18,7 @@ Este asistente utiliza Google Gemini (un LLM) para ayudar a desarrolladores a en
 - ✅ Identifica qué está mal en el código
 - ✅ Proporciona código corregido
 - ✅ Versión interactiva donde el usuario ingresa su propio código
+- ✅ Modo "Explicar código": analiza código sin errores para aprender
 
 ---
 
@@ -71,7 +72,13 @@ deactivate
 ### **Paso 3: Instala las dependencias**
 
 ```bash
-pip install google-genai python-dotenv
+pip3 install -r requirements.txt
+```
+
+O si prefieres instalarlas manualmente:
+
+```bash
+pip3 install google-genai python-dotenv
 ```
 
 ### **Paso 4: Configura tu API key**
@@ -99,7 +106,7 @@ GOOGLE_API_KEY=tu-clave-aquí
 ### **Versión 1: Con código de ejemplo (asistente.py)**
 
 ```bash
-python asistente.py
+python3 asistente.py
 ```
 
 Este script ejecuta un ejemplo predefinido y muestra cómo funciona el asistente.
@@ -107,7 +114,7 @@ Este script ejecuta un ejemplo predefinido y muestra cómo funciona el asistente
 ### **Versión 2: Interactiva (asistente_interactivo.py)**
 
 ```bash
-python asistente_interactivo.py
+python3 asistente_interactivo.py
 ```
 
 **Flujo de uso:**
@@ -179,6 +186,7 @@ asistente-codigo-ia/
 ├── .env                      # Variables de entorno (NO subir a Git)
 ├── .gitignore                # Archivos a ignorar en Git
 ├── README.md                 # Este archivo
+├── requirements.txt          # Dependencias del proyecto
 ├── asistente.py              # Versión con ejemplo predefinido
 ├── asistente_interactivo.py  # Versión interactiva
 ├── verificar_modelos.py      # Script para listar modelos disponibles
@@ -217,29 +225,9 @@ Este es mi proyecto de aprendizaje personal, pero si tienes sugerencias o encuen
 
 ---
 
-## 📄 Licencia
-
-MIT License - Siéntete libre de usar este código para aprender.
-
 ---
 
-## 👩‍💻 Autora
-
-**Eliana Ayarachi**
-
-- GitHub: [@ayarachi](https://github.com/ayarachi)
-- Ubicación: Buenos Aires, Argentina
-- Proyecto: Parte de mi journey para superar el estancamiento profesional y dominar el desarrollo con IA
-
----
-
-## 🙏 Agradecimientos
-
-Este proyecto fue posible gracias a:
-
-- Google Gemini API (modelo gratuito para desarrollo)
-- La comunidad de desarrolladores que comparte conocimiento abiertamente
-- Mi mentora Claude que me guió paso a paso en este proceso
+#
 
 ---
 
